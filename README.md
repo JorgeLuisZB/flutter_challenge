@@ -1,13 +1,13 @@
-# jorge_zaragoza_challenge
+# Flutter Challenge
 
-# README.MD
+## Description
 Given a list of contact names (List<String>), render an address book list where the names are grouped by their first character.
 
 ## Content
 This proyect has only one branch: master. **master** contains the full project.
 
 ## Demo
-If you want to see the demo of this proyect, you can visit [Demo of the proyect](https://drive.google.com/file/d/1NojrACRZC2XJQJ3pfZgqEUO3rPcb7c4Y/view?usp=sharing)
+If you want to see the demo of this proyect, you can visit [Demo of the proyect](https://drive.google.com/file/d/1K7ARm3AOICiIixDX7yudy9Z4qPH6YXd-/view?usp=sharing)
 
 ## How to clone
 * On GitHub AE, navigate to the main page of the repository.
@@ -43,5 +43,5 @@ flutter run
   ### Describe the approach taken to solve the challenge and the architecture of the app:
   The approach taken in this challenge was the optimization to render a list of items, and I used the ChangeNotifier + Provider architecture to solve the challenge.
   
-
+### -Jorge Zaragoza
 
