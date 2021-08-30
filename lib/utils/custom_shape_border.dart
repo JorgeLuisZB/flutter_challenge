@@ -10,7 +10,7 @@ class CustomShapeBorder extends ContinuousRectangleBorder {
   @override
   Path getOuterPath(Rect rect, {TextDirection? textDirection}) {
     return util.curvePath(
-      Size(util.getScreenWidth(context), util.getScreenHeight(context) * 0.17),
+      Size(util.getScreenWidth(context), util.getScreenHeight(context) * 0.18),
       10.0,
       10.25,
     );

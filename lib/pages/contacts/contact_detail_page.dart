@@ -60,7 +60,7 @@ class ContactDetailPage extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(10),
         child: Text(
-          args,
+          args.substring(0, args.length - 1),
           style: const TextStyle(fontSize: 32),
         ),
       ),

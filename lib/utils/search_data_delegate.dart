@@ -37,7 +37,8 @@ class SearchDataDelegate extends SearchDelegate<String> {
 
     return ListView.builder(
       itemCount: allData.length,
-      itemBuilder: (context, index) => ListItemWidget(text: allData[index]),
+      itemBuilder: (context, index) =>
+          ListItemWidget(index: index, text: allData[index]),
     );
   }
 
@@ -50,7 +51,8 @@ class SearchDataDelegate extends SearchDelegate<String> {
 
     return ListView.builder(
       itemCount: allData.length,
-      itemBuilder: (context, index) => ListItemWidget(text: allData[index]),
+      itemBuilder: (context, index) =>
+          ListItemWidget(index: index, text: allData[index]),
     );
   }
 }

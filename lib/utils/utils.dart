@@ -53,8 +53,6 @@ List<SectionModel> groupByCharacter(List<String> data) {
       .map((e) => {e.key: e.value})
       .toList();
 
-  print((result[0] as Map).keys);
-
   List<Map> toMap = [];
   List<SectionModel> sections = [];
   toMap.addAll(result as List<Map>);
@@ -65,17 +63,14 @@ List<SectionModel> groupByCharacter(List<String> data) {
 
     for (String key in toMap[i].keys) {
       sectionKey = key;
-      print('Keys: $sectionKey');
     }
 
     for (List<dynamic> value in toMap[i].values) {
       sectionValue = value;
-      print('Values: $sectionValue');
     }
 
     SectionModel newSection =
         SectionModel(title: sectionKey, data: sectionValue);
-    print('Section: ${newSection.toString()}');
     sections.add(newSection);
   }
 

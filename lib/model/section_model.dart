@@ -2,6 +2,8 @@
 class SectionModel {
   final String title;
   final List<dynamic> data;
+  bool isLoading = false;
+  bool isComplete = false;
 
   SectionModel({
     required this.title,

@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 
 /// Design of each item in the group
 class ListItemWidget extends StatelessWidget {
+  final int index;
   final String text;
 
-  const ListItemWidget({Key? key, required this.text}) : super(key: key);
+  const ListItemWidget({Key? key, required this.index, required this.text})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
       leading: Hero(
-        tag: text,
+        tag: '$text$index',
         child: CircleAvatar(
           backgroundColor: Theme.of(context).accentColor,
           child: Image.asset(
@@ -22,8 +24,8 @@ class ListItemWidget extends StatelessWidget {
         ),
       ),
       title: Text(text),
-      onTap: () =>
-          Navigator.pushNamed(context, 'contacts/detail', arguments: text),
+      onTap: () => Navigator.pushNamed(context, 'contacts/detail',
+          arguments: '$text$index'),
     );
   }
 }
