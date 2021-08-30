@@ -32,13 +32,16 @@ flutter run
 ![](/preview1.PNG)
 ![](/preview2.PNG)
 ![](/preview3.PNG)
+![](/preview4.PNG)
 
-### Questions
-  ¿Why a "scroll to index" behavior is not as straightforward?
+## Questions
+  ### ¿Why a "scroll to index" behavior is not as straightforward?
   I think a "scroll to index" behavior is not that straightforward because some widgets like ListView only represent items that users can see, for example, the app will crash if
   you want to scroll to index 40 when we only show 4 items on the screen. . . On the other hand, if we use a SingleScrollView, all the elements will be rendered and the
   application optimization will collapse.
   
-  Approach taken to solve the challenge and the architecture of the app:
+  ### Describe the approach taken to solve the challenge and the architecture of the app:
+  The approach taken in this challenge was the optimization to render a list of items, and I used the ChangeNotifier + Provider architecture to solve the challenge.
+  
 
 
